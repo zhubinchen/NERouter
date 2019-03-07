@@ -1,0 +1,16 @@
+PODS:
+  - NERouter (0.1.0)
+
+DEPENDENCIES:
+  - NERouter (from `../`)
+
+EXTERNAL SOURCES:
+  NERouter:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  NERouter: 87c43af1a827ab84adfcd668b589a3830522e7b0
+
+PODFILE CHECKSUM: ae73e333941796ad44d3b6cee2eabd7901b06e16
+
+COCOAPODS: 1.5.3

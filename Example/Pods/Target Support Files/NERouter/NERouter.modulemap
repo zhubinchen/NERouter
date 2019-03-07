@@ -1,0 +1,6 @@
+framework module NERouter {
+  umbrella header "NERouter-umbrella.h"
+
+  export *
+  module * { export * }
+}

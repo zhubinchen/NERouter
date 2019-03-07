@@ -1,0 +1,784 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1AA4B76474AAC4EB2F58312C69AFF295 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		1AB90AFD331F353D036D01D8810FD967 /* NERouter.h in Headers */ = {isa = PBXBuildFile; fileRef = 96910F43381D25B11257CD2488BB49C3 /* NERouter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1C68318DD2239FC7644F8D5F219665B9 /* Pods-NERouter_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A6093630DE4F1F2A7324F4B5B68C628 /* Pods-NERouter_Example-dummy.m */; };
+		40F212416AC1E3BA176A8713470E4CA0 /* Pods-NERouter_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DCF6F455036F02CFED69166D0C40CA3 /* Pods-NERouter_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4631F2449A9FFD826662DDEDF0ED9F7F /* NERouter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2203373944FAA51C6EB617A60EFF6928 /* NERouter-dummy.m */; };
+		5F426C6A985E8DCF8A3FBA817E2C09F0 /* NERouter-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D50FFD0165AA1109B4534EEF17A8F4F /* NERouter-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		70DFDCEB9A60D0F3B8A0777FD4A4BD30 /* NERouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DEB6B5D7E4B1004DBB05234A22D95B9 /* NERouter.m */; };
+		73982F01A2E5831A5B068F90B99930A8 /* Pods-NERouter_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 92E13FA0A4D3B470FF02BD2AF8724A70 /* Pods-NERouter_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		848BE9CCF421448DFDA71DB964116756 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		9AA8250E6A41FBA316D4F78E01AC966F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		A2B84C32A3C483FE65DCD0126D30B5F6 /* UIViewController+TopMost.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F7B01A40D52C721F5822762B4DB7D8 /* UIViewController+TopMost.m */; };
+		CE7E07BB35C2CEF569A2F455DBAAE784 /* Pods-NERouter_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BE7E389F58BADBB017FD8E024D9F75F4 /* Pods-NERouter_Tests-dummy.m */; };
+		DB1444D0B7ADC608C627D170F770E1F5 /* UIViewController+TopMost.h in Headers */ = {isa = PBXBuildFile; fileRef = E2594FF000F73CFFDBEEA5E31A716F9F /* UIViewController+TopMost.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		35757DE4BE69860D22E09EE642B921C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 628FA60152ECA3D5451D2A3372886B6C;
+			remoteInfo = "Pods-NERouter_Example";
+		};
+		8CFC536B49B31400FFF788AD5B53572E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0B887E02C7F8D04F31381967EFB1AA37;
+			remoteInfo = NERouter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0DCF6F455036F02CFED69166D0C40CA3 /* Pods-NERouter_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NERouter_Tests-umbrella.h"; sourceTree = "<group>"; };
+		13A9C29D39745B20AD405DBE88044B2B /* NERouter-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NERouter-prefix.pch"; sourceTree = "<group>"; };
+		2203373944FAA51C6EB617A60EFF6928 /* NERouter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NERouter-dummy.m"; sourceTree = "<group>"; };
+		248AC5D0BFAFFC00A90142D4AE5D14FA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		342567EC67734B3343BD13D599F485FA /* Pods-NERouter_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NERouter_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		363DDAF0DABE77F07ADD209C4DCCD1C3 /* Pods-NERouter_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NERouter_Example-frameworks.sh"; sourceTree = "<group>"; };
+		3B56515176E762534977836B7E608C47 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		4D50FFD0165AA1109B4534EEF17A8F4F /* NERouter-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NERouter-umbrella.h"; sourceTree = "<group>"; };
+		4D6E087C9EF9D0AA894605D34070CA67 /* NERouter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NERouter.xcconfig; sourceTree = "<group>"; };
+		504D4045C1A8B7C64689BA30B512EBD8 /* Pods-NERouter_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NERouter_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		59F7B01A40D52C721F5822762B4DB7D8 /* UIViewController+TopMost.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+TopMost.m"; path = "NERouter/Classes/UIViewController+TopMost.m"; sourceTree = "<group>"; };
+		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		841C1538860FB4D9C4FF405D99FB7BF0 /* Pods-NERouter_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NERouter_Tests.modulemap"; sourceTree = "<group>"; };
+		8A6093630DE4F1F2A7324F4B5B68C628 /* Pods-NERouter_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NERouter_Example-dummy.m"; sourceTree = "<group>"; };
+		92E13FA0A4D3B470FF02BD2AF8724A70 /* Pods-NERouter_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NERouter_Example-umbrella.h"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		96910F43381D25B11257CD2488BB49C3 /* NERouter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NERouter.h; path = NERouter/Classes/NERouter.h; sourceTree = "<group>"; };
+		9DEB6B5D7E4B1004DBB05234A22D95B9 /* NERouter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NERouter.m; path = NERouter/Classes/NERouter.m; sourceTree = "<group>"; };
+		A2587E8B3E369BEC188C52525CD7597D /* Pods-NERouter_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NERouter_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		A825EEFBDADAA750D45EF205A1413F0D /* Pods-NERouter_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NERouter_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		A9EA1800DB03F71E2EAA37A891A73984 /* Pods-NERouter_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NERouter_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		AEC667629CA56D5E1982AC75AED0D25C /* Pods-NERouter_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NERouter_Tests-resources.sh"; sourceTree = "<group>"; };
+		B066F5C11FB6BADF8890D8E487B823CA /* NERouter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NERouter.framework; path = NERouter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B150DF45079EB4E079503EAAC8945D22 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		B32D41D030757B63ADA32EFE0EFD439E /* Pods-NERouter_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NERouter_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		B62A5EAA9626FE739C89E304DA54ED53 /* NERouter.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = NERouter.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BAB3DD81F1385FA1BE12D6D3C7170446 /* Pods-NERouter_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NERouter_Example.modulemap"; sourceTree = "<group>"; };
+		BC76B4B13BC392ADC9DC95D0F16F369A /* Pods_NERouter_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NERouter_Tests.framework; path = "Pods-NERouter_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE7E389F58BADBB017FD8E024D9F75F4 /* Pods-NERouter_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NERouter_Tests-dummy.m"; sourceTree = "<group>"; };
+		CA07073CA26155B6BC1C71A5130B36FD /* Pods-NERouter_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NERouter_Example-resources.sh"; sourceTree = "<group>"; };
+		D719E2316C1B8A4F76F88D50DAD93B6F /* Pods_NERouter_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NERouter_Example.framework; path = "Pods-NERouter_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2594FF000F73CFFDBEEA5E31A716F9F /* UIViewController+TopMost.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+TopMost.h"; path = "NERouter/Classes/UIViewController+TopMost.h"; sourceTree = "<group>"; };
+		E919DC66B3ABBB399DCF07C4C9998375 /* Pods-NERouter_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NERouter_Example.release.xcconfig"; sourceTree = "<group>"; };
+		EC6D30EAB095803032EDE63BD28BF161 /* Pods-NERouter_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NERouter_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		F694DBB49FB3BA97E9DE327362E83F40 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB720FA796BD739842FF960D973A32B9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB75ED57C0613047C13B62EB1F5F7204 /* Pods-NERouter_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NERouter_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		FD6C5E4919241EEF6206C97A0D8AC26F /* NERouter.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = NERouter.modulemap; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		34B6DE5B2FA305A1A3288AD1BCF2B1D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AA8250E6A41FBA316D4F78E01AC966F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5017F70DFCF0CB0FD61B4C25547EA874 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				848BE9CCF421448DFDA71DB964116756 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAEAE3A9BD92009C487E13AFCFFE697F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AA4B76474AAC4EB2F58312C69AFF295 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		033F31B137B4AE2A5B235D54BCF9604E /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8063D64666CC373778DEE0C80ED83785 /* Pods-NERouter_Example */,
+				E39118FDA1326060A62A28EE4A23A4FC /* Pods-NERouter_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		37490ECA773DAA4CE3C8C9E2E0ABC0BF /* NERouter */ = {
+			isa = PBXGroup;
+			children = (
+				96910F43381D25B11257CD2488BB49C3 /* NERouter.h */,
+				9DEB6B5D7E4B1004DBB05234A22D95B9 /* NERouter.m */,
+				E2594FF000F73CFFDBEEA5E31A716F9F /* UIViewController+TopMost.h */,
+				59F7B01A40D52C721F5822762B4DB7D8 /* UIViewController+TopMost.m */,
+				8D193032A687DDA064EB7AA02027FC23 /* Pod */,
+				69A48A6383B308508D945A476BA60BAE /* Support Files */,
+			);
+			name = NERouter;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		3F282DDF115DBCBA702460E36259FF96 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				37490ECA773DAA4CE3C8C9E2E0ABC0BF /* NERouter */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		69A48A6383B308508D945A476BA60BAE /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F694DBB49FB3BA97E9DE327362E83F40 /* Info.plist */,
+				FD6C5E4919241EEF6206C97A0D8AC26F /* NERouter.modulemap */,
+				4D6E087C9EF9D0AA894605D34070CA67 /* NERouter.xcconfig */,
+				2203373944FAA51C6EB617A60EFF6928 /* NERouter-dummy.m */,
+				13A9C29D39745B20AD405DBE88044B2B /* NERouter-prefix.pch */,
+				4D50FFD0165AA1109B4534EEF17A8F4F /* NERouter-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/NERouter";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				3F282DDF115DBCBA702460E36259FF96 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				AFB985527A6395A52EAF6F2C3580E164 /* Products */,
+				033F31B137B4AE2A5B235D54BCF9604E /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8063D64666CC373778DEE0C80ED83785 /* Pods-NERouter_Example */ = {
+			isa = PBXGroup;
+			children = (
+				248AC5D0BFAFFC00A90142D4AE5D14FA /* Info.plist */,
+				BAB3DD81F1385FA1BE12D6D3C7170446 /* Pods-NERouter_Example.modulemap */,
+				A9EA1800DB03F71E2EAA37A891A73984 /* Pods-NERouter_Example-acknowledgements.markdown */,
+				FB75ED57C0613047C13B62EB1F5F7204 /* Pods-NERouter_Example-acknowledgements.plist */,
+				8A6093630DE4F1F2A7324F4B5B68C628 /* Pods-NERouter_Example-dummy.m */,
+				363DDAF0DABE77F07ADD209C4DCCD1C3 /* Pods-NERouter_Example-frameworks.sh */,
+				CA07073CA26155B6BC1C71A5130B36FD /* Pods-NERouter_Example-resources.sh */,
+				92E13FA0A4D3B470FF02BD2AF8724A70 /* Pods-NERouter_Example-umbrella.h */,
+				EC6D30EAB095803032EDE63BD28BF161 /* Pods-NERouter_Example.debug.xcconfig */,
+				E919DC66B3ABBB399DCF07C4C9998375 /* Pods-NERouter_Example.release.xcconfig */,
+			);
+			name = "Pods-NERouter_Example";
+			path = "Target Support Files/Pods-NERouter_Example";
+			sourceTree = "<group>";
+		};
+		8D193032A687DDA064EB7AA02027FC23 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				B150DF45079EB4E079503EAAC8945D22 /* LICENSE */,
+				B62A5EAA9626FE739C89E304DA54ED53 /* NERouter.podspec */,
+				3B56515176E762534977836B7E608C47 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		AFB985527A6395A52EAF6F2C3580E164 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B066F5C11FB6BADF8890D8E487B823CA /* NERouter.framework */,
+				D719E2316C1B8A4F76F88D50DAD93B6F /* Pods_NERouter_Example.framework */,
+				BC76B4B13BC392ADC9DC95D0F16F369A /* Pods_NERouter_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5E0D919E635D23B70123790B8308F8EF /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E39118FDA1326060A62A28EE4A23A4FC /* Pods-NERouter_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				FB720FA796BD739842FF960D973A32B9 /* Info.plist */,
+				841C1538860FB4D9C4FF405D99FB7BF0 /* Pods-NERouter_Tests.modulemap */,
+				342567EC67734B3343BD13D599F485FA /* Pods-NERouter_Tests-acknowledgements.markdown */,
+				A825EEFBDADAA750D45EF205A1413F0D /* Pods-NERouter_Tests-acknowledgements.plist */,
+				BE7E389F58BADBB017FD8E024D9F75F4 /* Pods-NERouter_Tests-dummy.m */,
+				504D4045C1A8B7C64689BA30B512EBD8 /* Pods-NERouter_Tests-frameworks.sh */,
+				AEC667629CA56D5E1982AC75AED0D25C /* Pods-NERouter_Tests-resources.sh */,
+				0DCF6F455036F02CFED69166D0C40CA3 /* Pods-NERouter_Tests-umbrella.h */,
+				B32D41D030757B63ADA32EFE0EFD439E /* Pods-NERouter_Tests.debug.xcconfig */,
+				A2587E8B3E369BEC188C52525CD7597D /* Pods-NERouter_Tests.release.xcconfig */,
+			);
+			name = "Pods-NERouter_Tests";
+			path = "Target Support Files/Pods-NERouter_Tests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2172DC158E36D6CFA24565EFD1419168 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F426C6A985E8DCF8A3FBA817E2C09F0 /* NERouter-umbrella.h in Headers */,
+				1AB90AFD331F353D036D01D8810FD967 /* NERouter.h in Headers */,
+				DB1444D0B7ADC608C627D170F770E1F5 /* UIViewController+TopMost.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4897C198F402A9888080813A78C4D488 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40F212416AC1E3BA176A8713470E4CA0 /* Pods-NERouter_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A255135D41E7891050C265BCEE76652F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73982F01A2E5831A5B068F90B99930A8 /* Pods-NERouter_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0B887E02C7F8D04F31381967EFB1AA37 /* NERouter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FEE54F6F3ADB71070400B293A383D4D /* Build configuration list for PBXNativeTarget "NERouter" */;
+			buildPhases = (
+				2172DC158E36D6CFA24565EFD1419168 /* Headers */,
+				EC4CE8A4743976E6F9F028BCAFEF965E /* Sources */,
+				5017F70DFCF0CB0FD61B4C25547EA874 /* Frameworks */,
+				3676807584E80FFDA559569359D2DD67 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NERouter;
+			productName = NERouter;
+			productReference = B066F5C11FB6BADF8890D8E487B823CA /* NERouter.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		628FA60152ECA3D5451D2A3372886B6C /* Pods-NERouter_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 62A21B35288A2EE019222760D0AA0574 /* Build configuration list for PBXNativeTarget "Pods-NERouter_Example" */;
+			buildPhases = (
+				A255135D41E7891050C265BCEE76652F /* Headers */,
+				5CC27C8BDF4D6C5604B35123E0E75AB9 /* Sources */,
+				34B6DE5B2FA305A1A3288AD1BCF2B1D4 /* Frameworks */,
+				ADE5DB8684A28E3B7A6773E3D7B0F90E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				216D0A5F2290BF6738FC01F9AABF457E /* PBXTargetDependency */,
+			);
+			name = "Pods-NERouter_Example";
+			productName = "Pods-NERouter_Example";
+			productReference = D719E2316C1B8A4F76F88D50DAD93B6F /* Pods_NERouter_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9B1BECBCE1F7979DB3B2A902F397FD43 /* Pods-NERouter_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69CD3923C634FC313B9AD297202EF17D /* Build configuration list for PBXNativeTarget "Pods-NERouter_Tests" */;
+			buildPhases = (
+				4897C198F402A9888080813A78C4D488 /* Headers */,
+				269C116DAE2BF15FF44915B10C464020 /* Sources */,
+				AAEAE3A9BD92009C487E13AFCFFE697F /* Frameworks */,
+				0C83169032D8A0394614B2FAC6A04DA4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D1EFB3FA78A7BDD9FC47F7DF1CD94CF6 /* PBXTargetDependency */,
+			);
+			name = "Pods-NERouter_Tests";
+			productName = "Pods-NERouter_Tests";
+			productReference = BC76B4B13BC392ADC9DC95D0F16F369A /* Pods_NERouter_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = AFB985527A6395A52EAF6F2C3580E164 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0B887E02C7F8D04F31381967EFB1AA37 /* NERouter */,
+				628FA60152ECA3D5451D2A3372886B6C /* Pods-NERouter_Example */,
+				9B1BECBCE1F7979DB3B2A902F397FD43 /* Pods-NERouter_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0C83169032D8A0394614B2FAC6A04DA4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3676807584E80FFDA559569359D2DD67 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADE5DB8684A28E3B7A6773E3D7B0F90E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		269C116DAE2BF15FF44915B10C464020 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE7E07BB35C2CEF569A2F455DBAAE784 /* Pods-NERouter_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CC27C8BDF4D6C5604B35123E0E75AB9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C68318DD2239FC7644F8D5F219665B9 /* Pods-NERouter_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC4CE8A4743976E6F9F028BCAFEF965E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4631F2449A9FFD826662DDEDF0ED9F7F /* NERouter-dummy.m in Sources */,
+				70DFDCEB9A60D0F3B8A0777FD4A4BD30 /* NERouter.m in Sources */,
+				A2B84C32A3C483FE65DCD0126D30B5F6 /* UIViewController+TopMost.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		216D0A5F2290BF6738FC01F9AABF457E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = NERouter;
+			target = 0B887E02C7F8D04F31381967EFB1AA37 /* NERouter */;
+			targetProxy = 8CFC536B49B31400FFF788AD5B53572E /* PBXContainerItemProxy */;
+		};
+		D1EFB3FA78A7BDD9FC47F7DF1CD94CF6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-NERouter_Example";
+			target = 628FA60152ECA3D5451D2A3372886B6C /* Pods-NERouter_Example */;
+			targetProxy = 35757DE4BE69860D22E09EE642B921C9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2553B0F44D74F8259649F9CC474F3891 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC6D30EAB095803032EDE63BD28BF161 /* Pods-NERouter_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-NERouter_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NERouter_Example/Pods-NERouter_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		343D48FDFD5735EA2B033019FB7E81AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D6E087C9EF9D0AA894605D34070CA67 /* NERouter.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/NERouter/NERouter-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NERouter/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/NERouter/NERouter.modulemap";
+				PRODUCT_MODULE_NAME = NERouter;
+				PRODUCT_NAME = NERouter;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		48EE7576E39771231AE3F006D909B817 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E919DC66B3ABBB399DCF07C4C9998375 /* Pods-NERouter_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-NERouter_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NERouter_Example/Pods-NERouter_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8164B9159665899C32754CEF020450AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B32D41D030757B63ADA32EFE0EFD439E /* Pods-NERouter_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-NERouter_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NERouter_Tests/Pods-NERouter_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8DE13178086C697803E92DC488AD87AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D6E087C9EF9D0AA894605D34070CA67 /* NERouter.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/NERouter/NERouter-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NERouter/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/NERouter/NERouter.modulemap";
+				PRODUCT_MODULE_NAME = NERouter;
+				PRODUCT_NAME = NERouter;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		96434B6C8FF320C976A10DAD7174A4BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		AAB6AB52183ABDB39D82C52DC4B75F09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2587E8B3E369BEC188C52525CD7597D /* Pods-NERouter_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-NERouter_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NERouter_Tests/Pods-NERouter_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D11C82AF2204B41B80412B8DC9C1D652 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D11C82AF2204B41B80412B8DC9C1D652 /* Debug */,
+				96434B6C8FF320C976A10DAD7174A4BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		62A21B35288A2EE019222760D0AA0574 /* Build configuration list for PBXNativeTarget "Pods-NERouter_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2553B0F44D74F8259649F9CC474F3891 /* Debug */,
+				48EE7576E39771231AE3F006D909B817 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69CD3923C634FC313B9AD297202EF17D /* Build configuration list for PBXNativeTarget "Pods-NERouter_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8164B9159665899C32754CEF020450AF /* Debug */,
+				AAB6AB52183ABDB39D82C52DC4B75F09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8FEE54F6F3ADB71070400B293A383D4D /* Build configuration list for PBXNativeTarget "NERouter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DE13178086C697803E92DC488AD87AC /* Debug */,
+				343D48FDFD5735EA2B033019FB7E81AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

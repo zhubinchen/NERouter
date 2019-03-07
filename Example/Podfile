@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'NERouter_Example' do
+  pod 'NERouter', :path => '../'
+
+  target 'NERouter_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

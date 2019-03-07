@@ -1,0 +1,22 @@
+{
+  "name": "NERouter",
+  "version": "0.1.0",
+  "summary": "A short description of NERouter.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/BingCheng/NERouter",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "BingCheng": "cheng4741@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/BingCheng/NERouter.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "NERouter/Classes/**/*"
+}
