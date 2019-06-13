@@ -7,26 +7,18 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "NERouterHandler.h"
+#import "NEHandlerWrapper.h"
 
-typedef void(^NEHandlerBlock)(NSString *url,NSDictionary* params,void(^completion)(NSDictionary*));
-
-@protocol NERouterHandler<NSObject>
-- (void)openFromURL:(NSString*)url
-         withParams:(NSDictionary*)params
-         completion:(void(^)(NSDictionary*))completion;
-@end
-
-@interface NEDefaultHandler: NSObject<NERouterHandler>
-
-+ (instancetype)handlerForBlock:(NEHandlerBlock)block;
-
-+ (instancetype)handlerForTarget:(id)target selector:(SEL)sel;
+@protocol NERouterDelegate <NSObject>
 
 @end
 
 @interface NERouter : NSObject
 
 @property (nonatomic,readonly) NSArray *allRegisteredURLs;
+
+@property (nonatomic,weak) id<NERouterDelegate> delegate;
 
 + (instancetype)sharedRouter;
 
@@ -38,7 +30,7 @@ typedef void(^NEHandlerBlock)(NSString *url,NSDictionary* params,void(^completio
            selector:(SEL)sel;
 
 - (void)registerURL:(NSString*)url
-           forBlock:(void(^)(NSDictionary* params,void(^completion)(NSDictionary*)))block;
+           forBlock:(void(^)(NSDictionary* params,void(^completion)(id)))block;
 
 - (void)registerURL:(NSString*)url
      forViewControllerClass:(Class<NERouterHandler>)clazz;
@@ -54,6 +46,7 @@ typedef void(^NEHandlerBlock)(NSString *url,NSDictionary* params,void(^completio
 
 - (BOOL)openURL:(NSString*)url
          params:(NSDictionary*)params
-     completion:(void(^)(NSDictionary*))completion;
+     completion:(void(^)(id value))completion;
 
 @end
+

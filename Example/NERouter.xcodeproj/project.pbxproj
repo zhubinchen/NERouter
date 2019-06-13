@@ -21,6 +21,7 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
+		760A592122B23D3A00CA657A /* NENextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 760A592022B23D3A00CA657A /* NENextViewController.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		E1A03040934F8B0AAEFF1625 /* Pods_NERouter_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E03C467604346B5C9F3FE54 /* Pods_NERouter_Tests.framework */; };
 		E5CBA952E9FF11F725CA3BCF /* Pods_NERouter_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09357431171FCB508FFED901 /* Pods_NERouter_Example.framework */; };
@@ -61,6 +62,8 @@
 		62A13CFBF28F88ADD3790A16 /* Pods-NERouter_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NERouter_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-NERouter_Example/Pods-NERouter_Example.release.xcconfig"; sourceTree = "<group>"; };
 		6BE3361741C751CBCD0E11F3 /* Pods-NERouter_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NERouter_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NERouter_Tests/Pods-NERouter_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		760A591F22B23D3A00CA657A /* NENextViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NENextViewController.h; sourceTree = "<group>"; };
+		760A592022B23D3A00CA657A /* NENextViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NENextViewController.m; sourceTree = "<group>"; };
 		83EDEE6180CAEC92AB43010E /* Pods-NERouter_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NERouter_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NERouter_Tests/Pods-NERouter_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		94E34682608CA5743471D76F /* NERouter.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = NERouter.podspec; path = ../NERouter.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -148,6 +151,8 @@
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* NEViewController.h */,
 				6003F5A6195388D20070C39A /* NEViewController.m */,
+				760A591F22B23D3A00CA657A /* NENextViewController.h */,
+				760A592022B23D3A00CA657A /* NENextViewController.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -260,6 +265,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -372,6 +378,7 @@
 			files = (
 				6003F59E195388D20070C39A /* NEAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* NEViewController.m in Sources */,
+				760A592122B23D3A00CA657A /* NENextViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

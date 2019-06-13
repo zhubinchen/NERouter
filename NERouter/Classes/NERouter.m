@@ -8,51 +8,9 @@
 
 #import "NERouter.h"
 #import "UIViewController+TopMost.h"
-#import <objc/runtime.h>
-
-@interface NEDefaultHandler()
-@property (nonatomic,copy) NEHandlerBlock block;
-@property (nonatomic,strong) id target;
-@property (nonatomic,assign) SEL sel;
-@end
-
-@implementation NEDefaultHandler
-
-+ (instancetype)handlerForBlock:(NEHandlerBlock)block{
-    NEDefaultHandler *handler = [[self alloc] init];
-    handler.block = block;
-    return handler;
-}
-
-+ (instancetype)handlerForTarget:(id)target selector:(SEL)sel {
-    NEDefaultHandler *handler = [[self alloc] init];
-    handler.target = target;
-    handler.sel = sel;
-    return handler;
-}
-
-- (void)openFromURL:(NSString *)url withParams:(NSDictionary *)params completion:(void (^)(NSDictionary *))completion {
-    if (self.block) {
-        self.block(url, params, completion);
-    }
-
-    NSMethodSignature *signature = [self.target methodSignatureForSelector:self.sel];
-    IMP imp = [self.target methodForSelector:self.sel];
-
-    if (signature.numberOfArguments == 0) {
-        void (*func)(id, SEL) = (void *)imp;
-        func(self.target, self.sel);
-    } else if (signature.numberOfArguments == 1) {
-        void (*func)(id, SEL, id) = (void *)imp;
-        func(self.target, self.sel, params);
-    }
-    completion(nil);
-}
-
-@end
 
 @interface NERouter()
-@property (nonatomic,strong) NSMutableDictionary *registerTable;
+@property (nonatomic,strong) NSMutableDictionary<NSString*,NEHandlerWrapper*> *registerTable;
 @end
 
 @implementation NERouter
@@ -86,35 +44,35 @@
     if (self.registerTable[realURL]) {
         NSLog(@"WARNING: Duplicate URL%@",realURL);
     }
-    self.registerTable[realURL] = handler;
+    self.registerTable[realURL] = weakHandler(handler);
 }
 
 - (void)registerURL:(NSString *)url forTarget:(id)target selector:(SEL)sel {
     id<NERouterHandler> handler = [NEDefaultHandler handlerForTarget:target selector:sel];
-    [self registerURL:url forHandler:handler];
+    [self registerURL:url forHandler:strongHandler(handler)];
 }
 
-- (void)registerURL:(NSString *)url forBlock:(void (^)(NSDictionary *, void (^)(NSDictionary *)))block {
-    id<NERouterHandler> handler = [NEDefaultHandler handlerForBlock:^(NSString *url, NSDictionary *params, void (^completion)(NSDictionary *)) {
+- (void)registerURL:(NSString *)url forBlock:(void (^)(NSDictionary *, void (^)(id)))block {
+    id<NERouterHandler> handler = [NEDefaultHandler handlerForBlock:^(NSString *url, NSDictionary *params, void (^completion)(id)) {
         block(params,completion);
     }];
-    [self registerURL:url forHandler:handler];
+    [self registerURL:url forHandler:strongHandler(handler)];
 }
 
 - (void)registerURL:(NSString *)url forViewControllerClass:(Class)clazz {
     if (![clazz isSubclassOfClass:UIViewController.class]) {
         NSLog(@"WARNING: %@ is NOT subclass of UIViewController",NSStringFromClass(clazz));
     }
-    NEDefaultHandler *handler = [NEDefaultHandler handlerForBlock:^(NSString *url, NSDictionary *params, void (^completion)(NSDictionary *)) {
+    NEDefaultHandler *handler = [NEDefaultHandler handlerForBlock:^(NSString *url, NSDictionary *params, void (^completion)(id)) {
         NSObject<NERouterHandler> *obj = [[clazz alloc] init];
         if ([obj respondsToSelector:@selector(openFromURL:withParams:completion:)]) {
             [obj openFromURL:url withParams:params completion:completion];
         }
         if ([obj isKindOfClass:UIViewController.class]) {
-            [UIViewController.topMost.navigationController pushViewController:(UIViewController*)obj animated:YES];
+            [UIViewController.ne_topMost.navigationController pushViewController:(UIViewController*)obj animated:YES];
         }
     }];
-    [self registerURL:url forHandler:handler];
+    [self registerURL:url forHandler:strongHandler(handler)];
 }
 
 - (void)unregisterURL:(NSString *)url {
@@ -127,7 +85,11 @@
         return YES;
     }
     NSString *realURL = [url componentsSeparatedByString:@"?"].firstObject.lowercaseString;
-    return self.registerTable[realURL] != nil;
+    if (self.registerTable[realURL].obj == nil) {
+        self.registerTable[realURL] = nil;
+        return NO;
+    }
+    return YES;
 }
 
 - (BOOL)openURL:(NSString *)url {
@@ -138,21 +100,22 @@
     return [self openURL:url params:params completion:nil];
 }
 
-- (BOOL)openURL:(NSString *)url params:(NSDictionary *)params completion:(void (^)(NSDictionary *))completion {
+- (BOOL)openURL:(NSString *)url params:(NSDictionary *)params completion:(void (^)(id))completion {
     if ([url hasPrefix:@"http"]) {
         [self openWebVC:url];
         return YES;
     }
     NSString *realURL = [url componentsSeparatedByString:@"?"].firstObject.lowercaseString;
-    id<NERouterHandler> target = self.registerTable[realURL];
+    id<NERouterHandler> target = self.registerTable[realURL].obj;
     if (!target) {
+        self.registerTable[realURL] = nil;
         NSLog(@"WARNING: Not found target for URL:%@",url);
         return NO;
     }
     if ([target respondsToSelector:@selector(openFromURL:withParams:completion:)]) {
         NSMutableDictionary *urlParams = [self parametersFromURL:url] ?: @{}.mutableCopy;
         [urlParams addEntriesFromDictionary:params];
-        [target openFromURL:realURL withParams:urlParams completion:completion ?:^(NSDictionary*dic){}];
+        [target openFromURL:realURL withParams:urlParams completion:completion ?:^(id value){}];
     }
     return YES;
 }

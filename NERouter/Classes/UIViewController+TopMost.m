@@ -10,7 +10,7 @@
 
 @implementation UIViewController(TopMost)
 
-+ (UIViewController *)topMost {
++ (UIViewController *)ne_topMost {
     UIViewController *resultVC;
     resultVC = [self _topViewController:[[UIApplication sharedApplication].keyWindow rootViewController]];
     while (resultVC.presentedViewController) {

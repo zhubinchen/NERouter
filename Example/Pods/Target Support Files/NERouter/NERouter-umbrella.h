@@ -11,6 +11,8 @@
 #endif
 
 #import "NERouter.h"
+#import "NERouterHandler.h"
+#import "NEHandlerWrapper.h"
 #import "UIViewController+TopMost.h"
 
 FOUNDATION_EXPORT double NERouterVersionNumber;

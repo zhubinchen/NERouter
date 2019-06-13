@@ -10,6 +10,6 @@
 
 @interface UIViewController(TopMost)
 
-@property(class,readonly) UIViewController *topMost;
+@property(class,readonly) UIViewController *ne_topMost;
 
 @end
